@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 1fr 65%;
+    grid-template-rows: 1fr; */
+}
+
+.left_side{
+    width: 35%;
+    background: linear-gradient(225.63deg, #37445B -17.16%, #19202C 79.72%);  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    height: 81px;
+    margin-top: 15px;
+    font-family: 'SF UI Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 67.8095px;
+    line-height: 81px; 
+    color:#FFFFFF;
+}
+
+.social_media{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;   
+}
+
+ .oval{
+    height: 36px;
+    width: 36px;
+    background:#333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.rignt-side{
+    position: relative;
+    width: 65%;
+}
+
+.container2{
+    position: absolute;
+    top: 32px;
+    right: 130px;
+    bottom: 116px;
+    left: 321px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.search-box{
+    height: 3rem;
+    width: 16.43rem;
+    background: #ECEFF2;
+    mix-blend-mode: normal;
+    opacity: 0.4;
+    border-radius: 24px;
+    position: relative;
+
+    text-indent: 10px;
+    color: #19202C;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;  
+}
+
+.search-icon{
+    position: absolute;
+    left: 13.5rem;
+    top: 0.9375rem;
+    right: 1rem;
+}
+
+.cart-menu{
+    display: flex;
+    gap: 3.6875rem;
+}
+
+.cart-box{
+    display: flex;
+}
+
+.card-number{
+    height: 24px;
+    width: 24px;
+    background: #ECEFF2;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.shows-category{
+    display: flex;
+    gap: 8px;
+}
+.shows-faded-category{ 
+    color:rgb(186 189 192);
+}
+.product-name h1{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 56px;
+    /* or 112% */
+
+
+    color: #19202C;
+}
+.rating-box{
+    display: flex;
+    gap: 11.85px;
+}
+.stars img{
+    width: 15.8px;
+    height: 15.03px;
+}
+.rating-count a{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #3F88EB;
+
+    mix-blend-mode: normal;
+}
+
+.price{
+    display: flex;
+    align-items: baseline;
+    gap: 19px;
+}
+
+.discount-price h2{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 42px;
+    /* identical to box height, or 131% */
+
+
+    color: #19202C;
+}
+
+.actual-price h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-decoration-line: line-through;
+
+    color: #19202C;
+
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+.description p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    color: #19202C;
+}
+.product-quantity{
+    display: flex;
+    gap: 1.875rem;
+}
+.color-box, .size-box, .quantity-box{
+    width: 108px;
+    height: 4.0625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-box p, .size-box p, .quantity-box p{
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #19202C;
+    
+}
+.circle-color, .quantify-field, .size-field{
+    width: 108px;
+    height: 42px;
+    border: 1px solid #EDEDED;
+    border-radius: 21px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.color1{
+    width: 24px;
+    height: 24px;
+    background: #000000;
+    border-radius: 12px;
+}
+.color2{
+    width: 24px;
+    height: 24px;
+    background: #F3F3F3;
+    border: 1px solid #EDEDED;
+    border-radius: 12px;
+    
+}
+.color3{
+    width: 24px;
+    height: 24px;
+    background: #7A3050;
+    border-radius: 12px;
+}
+.size p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #202124;
+}
+.minus{
+    width: 12px;
+}
+.pluss{
+    width: 10px;
+    height: 10px;
+}
+.quantity p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.add-to-cart{
+    width: 241px;
+    height: 56px;
+    background: #3F88EB;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.add-to-cart:hover{
+    scale: 1.01;
+    cursor: pointer;
+}
+.add-to-savelist{
+    display: flex;
+    align-items: baseline;
+    gap: 11.64px;
+}
+.add-to-savelist:hover{
+    cursor: pointer;
+}
+.cart{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    gap: 31.67px;
+}
+
+.add-to-cart h3{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+.add-to-savelist h3{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.add-to-savelist img{
+    height: 12.8px;
+    width: 16.6px;
+}
+
+.delivery-details p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #19202C;
+}
+
+.product{
+    position: absolute;
+    height: 535px;
+    width: 622.99px;
+
+    left: 8.21%;
+    right: 47.29%;
+    top: 15.5%;
+    bottom: 17.62%;
+
+    /* background-image: url(WebDeveloper/Web/ShoeLarge.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;  
+ */
+}
+ 
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  
+}
+ 
+ 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    .container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container2{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+    }
+    .left_side{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        justify-content: flex-end;
+    }
+    .rignt-side{
+        position: absolute;
+        width: 100%;
+        margin:0 30px;
+    }
+    .social_media{
+        position: absolute;
+        top: 125vh;
+        left: 40%;
+    }
+
+    .brand{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 60px;
+        left: 30px;
+    }
+
+    .brand h3{
+        font-size: 24px;
+        line-height: 29px;
+        height: 29px;
+        width: 62px;
+    } 
+
+    .navbar{
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;  
+        margin-top: 60px;
+        gap: 20px;
+    }
+    
+    .cart-menu{
+        gap: 20px;
+    }
+    
+    .shows-category{
+        margin-top: 80px;
+    }
+
+    .search-box{
+        height: 2rem;
+        width: 8.43rem;
+    }
+
+    .search-icon{
+        position: absolute;
+        left: 450px;
+        top: 70px;
+    }
+    .product-box{
+        Width:195.77px;
+        Height:177.47px;
+        border:1px solid white;
+        
+        
+
+    }
+    .product-name h1{
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        line-height: 36px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+    }
+
+    .product img{
+        position: absolute;
+        width: 195.77px;
+        height: 177.47px;
+        left: 89.84px;
+        top: 198.36px;  
+    }
+    
+    
+    /* .social_media{
+        position: absolute;
+        top: 92.28%;
+        left: 40%;
+    }
+    
+    .search-box{
+        height: 2rem;
+        width: 8.43rem;
+        background: #19202C ; 
+        margin-bottom: 10px; 
+    
+    }
+    
+    .search-icon{
+        position: absolute;
+        left: 6.5rem;
+        right: 1rem;
+        margin-top: 10px;
+        color: white;
+    }
+    
+      
+    .cart-menu{
+        padding-top: 15px;
+        display: flex;
+        gap: 3.6875rem;
+    }
+    
+    
+    
+    .card-number{
+        height: 24px;
+        width: 24px;
+        background: #ECEFF2;
+        mix-blend-mode: normal;
+        opacity: 0.7;
+        border-radius: 100px;
+        text-align: center;
+    }
+    .navbar{
+        gap: 40px;
+    }
+
+     .brand h3{
+        font-size: 24px;
+        line-height: 29px;
+        height: 29px;
+        width: 62px;
+        margin-top: 40px;
+        margin-left: 40px;
+    } */
+
+    
+    
+    
+  
+}
+ 
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+ 
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+ 
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  
+}
